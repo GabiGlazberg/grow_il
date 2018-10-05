@@ -1,0 +1,61 @@
+// Utils
+@import 'utils/font-face';
+@import 'utils/custom-check-box';
+@import 'utils/inputs';
+@import 'utils/buttons';
+@import 'utils/grid';
+
+// Global
+@import 'base/global';
+@import 'base/mixin';
+@import 'base/fonts';
+@import 'base/button';
+
+// Bootstrap
+@import 'base/bootstrap';
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+//@import '../../../../node_modules/bootstrap/scss/bootstrap';
+
+// Variables
+@import "variables";
+@import 'base/modal';
+
+// Components
+@import "components/categories";
+@import "components/header";
+@import "components/main-content";
+@import "components/side-bar";
+@import "components/footer";
+@import "components/home/home";
+
+body {
+  font-family: "AssistantRegular", sans-serif;
+  @include direction;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+.success {
+  margin-top: 5px;
+}
+
+.row {
+    @include margin-left(0);
+    @include margin-right(0);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    color: black;
+  }
+}

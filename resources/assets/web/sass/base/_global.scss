@@ -1,0 +1,26 @@
+// Breakpoints
+$breakpoints: (
+  'nomedia':  4000px,
+  'xxlarge':  1400px,
+  'xmlarge':  1250px,
+  'xlarge':   1140px,
+  'mlarge':   1024px,
+  'large':    992px,
+  'XLmedium': 920px,
+  'Lmedium':  845px,
+  'medium':   768px,
+  'MSmedium': 650px,
+  'Smedium':  600px,
+  'Lsmall' :  560px,
+  'small':    540px,
+  'XMsmall':  500px,
+  'Xsmall':   385px,
+);
+
+.inline-block {
+  display: inline-block;
+}
+
+.custom-error {
+  list-style: none;
+}
