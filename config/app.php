@@ -121,6 +121,8 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'direction' => 'ltr',
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers

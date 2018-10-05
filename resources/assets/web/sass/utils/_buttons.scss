@@ -1,0 +1,17 @@
+@mixin custom-button {
+  button {
+    width: 100%;
+    height: 40px;
+    border: 2px solid $gold;
+    background-color: white;
+    font-size: 27px;
+
+    &:active, &:hover, &:focus {
+      outline: 1px solid $gold;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

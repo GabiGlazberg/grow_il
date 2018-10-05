@@ -1,0 +1,75 @@
+.header {
+  grid-area: header;
+  margin-top: 1px;
+  box-shadow: 0 1px 1px 0 #888888;
+  background-color: rgb(255, 255, 230);
+
+  &--wrapper {
+
+    &__list {
+      list-style: none;
+      display: flex;
+
+      &__item {
+        width: 32%;
+        margin: 5px;
+      }
+
+      .icon {
+        &__image {
+          @include float(left);
+          width: 66px;
+          height: 41px;
+
+        }
+      }
+
+      .search {
+        input {
+          @include custom-input;
+          width: 100%;
+          height: 34px;
+          border-radius: 2px;
+          margin-top: 4px;
+          background-color: rgba(230, 230, 230, .5);
+        }
+      }
+
+      .action {
+        @include text-align('right');
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__new-post {
+          @include custom-button;
+          width: 130px;
+          @include left(40px);
+          @include margin-right(50px);
+          height: 25px;
+          margin-top: 5px;
+          background-color: rgb(179, 255, 179);
+        }
+
+        &__user {
+          img {
+            width: 34px;
+          }
+        }
+
+        &__notification {
+          @include margin-right(10px);
+
+          img {
+            width: 34px;
+            height: 31px;
+            margin-top: 4px;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

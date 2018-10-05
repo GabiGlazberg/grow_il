@@ -1,0 +1,9 @@
+.home-page {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr 27px 3fr 27px 1.4fr 1.1fr;
+  grid-template-rows: 50px auto 100px;
+  grid-template-areas:
+          ". header header header header header ."
+          ". categories . main . sidebar ."
+          ". footer footer footer footer footer .";
+}

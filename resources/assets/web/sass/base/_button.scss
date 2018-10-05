@@ -1,0 +1,10 @@
+button {
+  background: none;
+}
+
+@mixin custom-button {
+  cursor: pointer;
+  &:active, &:focus {
+    outline: none;
+  }
+}
