@@ -1,3 +1,40 @@
 .categories {
   grid-area: categories;
+
+  &--wrapper {
+    @include custom-box;
+    overflow-y: auto;
+  }
+
+  &--list {
+    list-style: none;
+
+    &__title {
+      margin: 20px 10px;
+
+    }
+
+    &__item {
+      font-family: AssistantSemiBold;
+      margin: 6px 0;
+
+      span {
+        @include margin-left(10px);
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(209, 224, 224);
+      }
+    }
+
+    &__more {
+      cursor: pointer;
+      @include margin-left(10px);
+    }
+  }
+  
+  @include respond-above('medium') {
+    display: none;
+  }
+
 }

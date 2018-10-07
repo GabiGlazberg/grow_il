@@ -25,6 +25,7 @@
       }
 
       .search {
+        width: 100%;
         input {
           @include custom-input;
           width: 100%;
@@ -71,5 +72,34 @@
     }
 
   }
+
+  @include respond-above('medium') {
+    &--wrapper {
+
+      &__list {
+
+        &__item {
+          width: max-content;
+        }
+
+      }
+
+        .action {
+          &__new-post {
+            @include margin-right(0);
+            width: 79px;
+          }
+
+        }
+
+
+      .search {
+        width: 90px;
+      }
+
+      }
+
+    }
+
 
 }

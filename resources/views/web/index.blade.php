@@ -6,7 +6,7 @@
 
     @include('web.partials.categories')
 
-    {{--@include('web.partials.main-content')--}}
+    @include('web.partials.main-content')
 
     {{--@include('web.partials.side-bar')--}}
 
