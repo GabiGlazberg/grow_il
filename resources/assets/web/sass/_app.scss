@@ -4,6 +4,7 @@
 @import 'utils/inputs';
 @import 'utils/buttons';
 @import 'utils/grid';
+@import 'utils/custom-box';
 
 // Global
 @import 'base/global';
@@ -13,12 +14,6 @@
 
 // Bootstrap
 @import 'base/bootstrap';
-
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-//@import '../../../../node_modules/bootstrap/scss/bootstrap';
 
 // Variables
 @import "variables";
@@ -58,4 +53,8 @@ a {
   &:hover {
     color: black;
   }
+}
+
+ul {
+  list-style: none;
 }

@@ -1,3 +1,52 @@
 .main-container {
   grid-area: main;
+
+  &--filters {
+    top: 35px;
+    position: relative;
+
+    &__list {
+      width: 71%;
+      align-items: center;
+      margin: auto;
+
+    }
+
+    &__items {
+      width: 16%;
+      display: inline-block;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 700;
+      cursor: pointer;
+
+      &-active {
+        background-color: rgb(51, 255, 255);
+        box-shadow: 2px 3px 3px 3px rgb(0, 230, 230);
+      }
+    }
+  }
+
+  &--feed {
+    position: relative;
+    width: 100%;
+    top: 50px;
+
+    &__list {
+
+    }
+
+    &__item {
+
+    }
+
+    .feed-item {
+      width: 97%;
+      height: 150px;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
 }
