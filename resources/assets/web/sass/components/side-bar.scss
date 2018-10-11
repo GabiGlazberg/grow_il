@@ -1,3 +1,36 @@
 .side-bar {
   grid-area: sidebar;
+
+  &--container {
+    @include custom-box;
+    height: auto;
+    padding: 20px 10px;
+
+    &__title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    &__item {
+      padding: 10px 2px;
+      img {
+        width: 20px;
+      }
+
+      span {
+        @include margin-left(3px);
+        cursor: pointer;
+      }
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        background-color: #00e6e6;
+        border-radius: 9px;
+      }
+    }
+
+  }
 }
