@@ -85,7 +85,10 @@
       }
 
         .action {
+          position: absolute;
+          @include right(5px);
           &__new-post {
+            display: none;
             @include margin-right(0);
             width: 79px;
           }
@@ -94,7 +97,7 @@
 
 
       .search {
-        width: 90px;
+        width: 140px;
       }
 
       }

@@ -32,21 +32,220 @@
     width: 100%;
     top: 50px;
 
-    &__list {
-
-    }
-
-    &__item {
-
-    }
-
     .feed-item {
-      width: 97%;
-      height: 150px;
-      background-position: center center;
-      background-size: contain;
-      background-repeat: no-repeat;
+      @include custom-box;
+      height: 210px;
+
+      &--first {
+        height: 500px;
+
+      }
+
+      &__main-image {
+        width: 100%;
+        height: 250px;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+      }
+
+      &--content {
+        height: 210px;
+        padding: 10px;
+        position: relative;
+        display: block;
+        &__main-title {
+          font-size: 45px;
+          padding: 10px;
+          font-family: AssistantSemiBold;
+        }
+
+        &__title {
+          font-size: 25px;
+          padding: 10px;
+          font-family: AssistantSemiBold;
+          display: inline-block;
+          top: -22px;
+          position: relative;
+        }
+
+        &__author-image {
+          height: 50px;
+          width: 50px;
+          background-position: center center;
+          background-size: 100%;
+          display: inline-block;
+          position: relative;
+          top: 10px;
+          @include left(10px);
+        }
+
+        &__first-author-name {
+          display: inline-block;
+          @include margin-left(19px);
+          top: -16px;
+          font-family: AssistantSemiBold;
+          font-size: 20px;
+          position: relative;
+
+        }
+
+        &__author-name {
+          display: inline-block;
+          @include margin-left(70px);
+          font-family: AssistantSemiBold;
+          font-size: 20px;
+          position: relative;
+          top: -30px;
+
+        }
+
+        &__first-categories {
+          left: 74px;
+          position: relative;
+          top: -17px;
+          display: inline-block;
+        }
+
+        &__categories {
+          left: 74px;
+          top: -20px;
+          position: relative;
+          display: inline-block;
+
+        }
+
+        &__action {
+          position: absolute;
+          bottom: 0;
+        }
+
+        &__first-action {
+          position: absolute;
+          bottom: -20px;
+          @include right(20px);
+          width: 106px;
+          height: 40px;
+          display: inline-block;
+        }
+
+        &__comments-count {
+          position: absolute;
+          bottom: 10px;
+          @include left(30px);
+          width: 50px;
+
+
+          &:before {
+            content: '';
+            display: inline-block;
+            position: relative;
+            background: url('/assets/web/images/comment-icon.png') no-repeat center;
+            width: 21px;
+            background-size: 100%;
+            height: 22px;
+            @include right(5px);
+          }
+        }
+
+        &__likes-count {
+          position: absolute;
+          bottom: 10px;
+          @include left(67px);
+          width: 50px;
+
+          &:before {
+            content: '';
+            display: inline-block;
+            position: relative;
+            background: url('/assets/web/images/weed-like-icon.jpg') no-repeat center;
+            width: 21px;
+            background-size: 100%;
+            height: 22px;
+            @include right(3px);
+          }
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
+  @include respond-above('large') {
+    width: 98%;
+    position: relative;
+    @include left(2%);
+
+    &--filters {
+      display: none;
+    }
+
+
+    &--feed {
+      position: relative;
+      width: 100%;
+      top: 10px;
+
+      .feed-item {
+        @include custom-box;
+        height: 200px;
+
+        &--first {
+          height: 300px;
+
+        }
+
+        &__main-image {
+          height: 120px;
+        }
+
+        &--content {
+          height: 200px;
+
+          &__main-title {
+            font-size: 25px;
+          }
+
+          &__title {
+            width: calc(100% - 50px);
+            @include left(50px);
+            top: -55px;
+          }
+
+          &__author-name {
+            top: -55px;
+
+          }
+
+          &__categories {
+            top: -45px;
+          }
+
+          &__action {
+            position: absolute;
+            bottom: 0;
+          }
+
+          &__first-action {
+            bottom: 24px;
+          }
+
+          &__comments-count {
+            bottom: 0;
+
+          }
+
+          &__likes-count {
+            bottom: 0;
+
+          }
+        }
+
+      }
+    }
+
+  }
 }
