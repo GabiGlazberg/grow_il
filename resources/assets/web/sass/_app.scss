@@ -30,6 +30,7 @@
 body {
   font-family: "AssistantRegular", sans-serif;
   @include direction;
+  @include text-align('left');
 }
 
 .error {

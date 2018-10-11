@@ -758,18 +758,13 @@ dir {
 }
 
 .header--wrapper__list .action__new-post {
-  cursor: pointer;
+  text-align: center;
   width: 130px;
   right: 40px;
   margin-left: 50px;
   height: 25px;
   margin-top: 5px;
   background-color: #b3ffb3;
-}
-
-.header--wrapper__list .action__new-post:active,
-.header--wrapper__list .action__new-post:focus {
-  outline: none;
 }
 
 .header--wrapper__list .action__user img {
@@ -920,14 +915,14 @@ dir {
 }
 
 .main-container--feed .feed-item--content__first-categories {
-  left: 74px;
+  right: 74px;
   position: relative;
   top: -17px;
   display: inline-block;
 }
 
 .main-container--feed .feed-item--content__categories {
-  left: 74px;
+  right: 74px;
   top: -20px;
   position: relative;
   display: inline-block;
@@ -1124,6 +1119,7 @@ dir {
 body {
   font-family: "AssistantRegular", sans-serif;
   direction: rtl;
+  text-align: right;
 }
 
 .error {

@@ -42,7 +42,7 @@
         flex-direction: row-reverse;
 
         &__new-post {
-          @include custom-button;
+          text-align: center;
           width: 130px;
           @include left(40px);
           @include margin-right(50px);

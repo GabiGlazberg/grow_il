@@ -4,23 +4,23 @@
         <ul class="main-container--filters__list">
 
             <li class="main-container--filters__items main-container--filters__items-active">
-                {{ __('latest') }}
+                {{ __('אחרונים') }}
             </li>
 
             <li class="main-container--filters__items">
-                {{ __('today') }}
+                {{ __('היום') }}
             </li>
 
             <li class="main-container--filters__items">
-                {{ __('week') }}
+                {{ __('השבוע') }}
             </li>
 
             <li class="main-container--filters__items">
-                {{ __('month') }}
+                {{ __('החודש') }}
             </li>
 
             <li class="main-container--filters__items">
-                {{ __('year') }}
+                {{ __('השנה') }}
             </li>
 
         </ul>

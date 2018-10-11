@@ -15,7 +15,7 @@
             <li class="header--wrapper__list__item">
 
                 <div class="search">
-                    <input type="text" placeholder="search">
+                    <input type="text" placeholder="{{ __('חיפוש') }}">
                 </div>
 
             </li>
@@ -32,9 +32,9 @@
                         <img src="{{ url('assets/web/images/bell-512.png') }}" alt="">
                     </div>
 
-                    <button class="action__new-post">
+                    <a href="/new-post" class="action__new-post">
                         {{  __('פוסט חדש') }}
-                    </button>
+                    </a>
 
                 </div>
 

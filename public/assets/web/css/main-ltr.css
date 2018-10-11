@@ -758,18 +758,13 @@ dir {
 }
 
 .header--wrapper__list .action__new-post {
-  cursor: pointer;
+  text-align: center;
   width: 130px;
   left: 40px;
   margin-right: 50px;
   height: 25px;
   margin-top: 5px;
   background-color: #b3ffb3;
-}
-
-.header--wrapper__list .action__new-post:active,
-.header--wrapper__list .action__new-post:focus {
-  outline: none;
 }
 
 .header--wrapper__list .action__user img {
@@ -1124,6 +1119,7 @@ dir {
 body {
   font-family: "AssistantRegular", sans-serif;
   direction: ltr;
+  text-align: left;
 }
 
 .error {

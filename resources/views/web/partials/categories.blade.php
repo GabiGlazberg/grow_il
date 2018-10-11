@@ -4,88 +4,16 @@
         <ul class="categories--list">
 
             <li class="categories--list__title">
-                <span>{{ __('top categories') }}</span>
+                <span>{{ __('קטגוריות') }}</span>
             </li>
 
 
             <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
-            </li>
-            <li class="categories--list__item">
-                <span>#weed</span>
+                <span>#{{ 'טלגרם' }}</span>
             </li>
 
             <li class="categories--list__more">
-                {{ __('more categories') }}
+                {{ __('עוד קטגוריות') }}
             </li>
 
         </ul>

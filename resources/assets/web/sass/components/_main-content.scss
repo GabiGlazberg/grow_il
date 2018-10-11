@@ -102,14 +102,14 @@
         }
 
         &__first-categories {
-          left: 74px;
+          @include left(74px);
           position: relative;
           top: -17px;
           display: inline-block;
         }
 
         &__categories {
-          left: 74px;
+          @include left(74px);
           top: -20px;
           position: relative;
           display: inline-block;
